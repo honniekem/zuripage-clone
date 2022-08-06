@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none !important;
+    font-family: 'averta', 'manrope', sans-serif;
+    
+}
+:root{
+    --text-gray:#514949;
+    --text-red:#e7332b;
+}
+body{
+    background-color: #fffafa;
+    color: #212529;
+    font-size: 1rem;
+    overflow-x: hidden;
+}
+.hero-section{
+    height: 800px;
+    background-image: url(./images/hero-bg.svg);
+    background-size: cover;
+    background-position: center ;
+    background-repeat: no-repeat;
+}
+.zuri-logo{
+
+    margin: 0px auto;
+    padding-top: 69px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+.logo{
+    vertical-align: middle;
+
+}
+.hero-text{
+    padding: 10px;
+    text-align: center;
+    margin: 0px auto;
+    max-width: 700px;
+}
+.hero-text h2{
+    color: var(--text-gray);
+    font-weight: 800;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 36px;
+    line-height: 47px;
+}
+.hero-text p{
+    line-height: 24px;
+    color: var(--text-gray);
+    margin-bottom: 1rem;
+}
+.hero-btn{
+    margin-top: 93px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+a{
+color: var(--text-red);
+}
+.hero-btn a{
+    color: var(--text-red);
+    font-size: 16px;
+    font-weight: 400;
+}
+.hero-btn a .hero-btn-1{
+   padding: 11px 28px;
+   border: 1px solid var(--text-red);
+   font-size: 16px;
+    font-weight: 400;
+}
+.red-btn{
+ background-color: var(--text-red);
+ color: white;
+ margin-right: 24px; 
+ transition: .3s ease-in-out;  
+}
+.red-btn-2{
+    background-color: #fff;
+    color: var(--text-red);
+}
+.red-btn:hover{
+    background: transparent;
+    border: 2px solid var(--text-red);
+    color: #e7332b;
+}
+.red-btn-2:hover{
+    background: var(--text-red);
+    color: white;
+}
+
+/* zuri container info style */
+.zuri-info{
+    background-color: #fff;
+}
+.info-container{
+    margin: 0px auto;
+    width: 100%;
+    padding: 0px 15px 0px 15px;
+    text-align: center;
+}
+.info-heading{
+   color: var(--text-red);
+   margin-top: 141px;
+   font-size: 14px;
+   line-height: 24px;
+    font-weight: 300;
+}
+.sub-info-heading{
+    color: var(--text-gray);
+    margin: 8px 0px 64px 0px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 40px;
+    
+}
+.training-cards{
+    /* border: 2px solid red; */
+  max-width: 1240px;
+}
+.cards img{
+    margin-bottom: 48px;
+}
+.card-content{
+    background-color: #fffafa;
+    text-align: left;
+    line-height:24px;
+    padding:61px 47px 82px 36px;
+  
+}
+/* .card{
+    position: relative;
+    z-index: 1;
+    border: 2px solid blue;
+    outline: none;
+
+} */
+.card-main-content p{
+    font-size: 16px !important;
+    line-height: 24px !important;
+    color: #514949 !important;
+}
+.cards{
+    position: relative;
+    z-index: 1;
+}
+.cards .dot-bg{
+    width: 100%;
+    position: absolute;
+    left: -120px;
+    top: -75px;
+    z-index: -1;
+    
+}
+.cards .dot-bg-2{
+    width: 90%;
+    position: absolute;
+    right: -120px;
+    top: -75px;
+    z-index: -1;
+    
+}
+
+.card-content h3 a{
+    font-size: 1rem;
+    opacity: 0.9;
+    line-height: 24px;
+    color: var(--text-red);
+}
+.card-content p{
+    font-size: 1rem;
+    opacity: 0.9;
+    line-height: 24px;
+    color: var(--text-gray); 
+}
+
+.footer-section{
+    margin-top: 220px;
+}
+.footer-section-container{
+    padding: 22px;
+    margin-bottom: 56px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.social-links img{
+    width: 18px;
+    margin-right: 5px;
+}
+.footer-section h3{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #514949;
+}
+
+/* media query */
+@media screen and (max-width:768px) {
+    .hero-section{
+        height: auto;
+    }
+    img.logo {
+        display: block;
+        padding-top: 50px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .hero-text h2 {
+        font-size: 28px;
+        line-height: 34px;
+        text-align: center;
+    }
+    .hero-text p{
+        padding: 0px 5px;
+    }
+    .hero-btn{
+        margin-bottom: 50px;
+        flex-direction: column;
+
+    }
+    .hero-btn a .hero-btn-1{
+        display: block;
+        margin: auto;
+        justify-content: center;
+        
+    }
+    .dot-bg-2, .dot-bg{
+        display: none;
+    }
+    .footer-section-container{
+        flex-direction: column;
+        justify-content: center;
+
+    }
+    .footer-section-container h3{
+        font-size: 24px;
+        margin-top: 20px;
+    }
+    .footer-section{
+        margin-top: 150px;
+    }
+}
